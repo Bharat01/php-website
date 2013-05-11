@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script type="text/javascript">
+function showUser(str)
+{
+if (str=="")
+  {
+  document.getElementById("txtHint1").innerHTML="";
+  return;
+  } 
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+    document.getElementById("txtHint1").innerHTML=xmlhttp.responseText;
+    }
+  }
+xmlhttp.open("GET","getuser.php?info="+encodeURI(str),true);
+xmlhttp.send();
+}
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>About Us</title>
+<style type="text/css">
+<!--
+.style4 {font-family:'Monotype Corsiva','Apple Chancery','ITC Zapf Chancery','URW Chancery L',cursive;}
+.style5 {
+	font-size: 30px;
+	color: #000000;
+}
+-->
+</style>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	
+	
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection"/>
+	<!--[if lte IE 7]>
+        <link rel="stylesheet" type="text/css" href="css/ie.css" media="screen" />
+    <![endif]-->
+			
+	<script type="text/javascript" src="js/jquery-1.3.1.min.js"></script>	
+	<script type="text/javascript" language="javascript" src="js/jquery.dropdownPlain.js"></script>
+
+
+<style type="text/css">
+.shakeimage{
+position:relative
+}
+</style>
+<script language="JavaScript1.2">
+
+/*
+Shake image script (onMouseover)- 
+© Dynamic Drive (www.dynamicdrive.com)
+For full source code, usage terms, and 100's more DHTML scripts, visit http://dynamicdrive.com
+*/
+
+//configure shake degree (where larger # equals greater shake)
+var rector=3
+
+///////DONE EDITTING///////////
+var stopit=0 
+var a=1
+
+function init(which){
+stopit=0
+shake=which
+shake.style.left=0
+shake.style.top=0
+}
+
+function rattleimage(){
+if ((!document.all&&!document.getElementById)||stopit==1)
+return
+if (a==1){
+shake.style.top=parseInt(shake.style.top)+rector+"px"
+}
+else if (a==2){
+shake.style.left=parseInt(shake.style.left)+rector+"px"
+}
+else if (a==3){
+shake.style.top=parseInt(shake.style.top)-rector+"px"
+}
+else{-
+shake.style.left=parseInt(shake.style.left)-rector+"px"
+}
+if (a<4)
+a++
+else
+a=1
+setTimeout("rattleimage()",50)
+}
+
+function stoprattle(which){
+stopit=1
+which.style.left=0
+which.style.top=0
+}
+
+</script>
+</head>
+
+
+<body>
+<style>
+body {background-image:url('grey.jpg');}
+</style>
+<body style="padding-left:150px;padding-right:150px">
+<a href="/education/login.php" style="float:right;margin-top:80px;color:red">
+
+<a id="login">click here to login</a>
+<style type="text/css">
+h1 {text-shadow:2px 2px #FF0000;
+background-image: url('grey1.jpg');}
+h2 {text-shadow:3px 1px #FF0000;}
+</style>
+<h1 style="font-family:'Comic Sans MS',cursive;font-size:100px;margin-bottom:0px;">eDucaTedIndia</h1>
+<h2 class="style4" style="background-color:#303030 ;width:100%;height:24px;font-size:20px;margin-top:0px">Be what you want to be.. <span class="style4" style="background-color:#989898;widht:1100px;height:30px;margin-top:0px"> <span class="style4" style="background-color:#989898;widht:1100px;height:30px;margin-top:0px"> <a href="https://www.facebook.com/" target="_blank"><img border="0" src="facebook.png" style="float:right"; class="shakeimage" onMouseover="init(this);rattleimage()" onMouseout="stoprattle(this);top.focus()" onClick="top.focus()"/></a> <a href="https://www.twitter.com/" target="_blank"><img border="0" src="twitter.png" style="float:right" class="shakeimage" onMouseover="init(this);rattleimage()" onMouseout="stoprattle(this);top.focus()" onClick="top.focus()"/></a> <span style="background-color:#800000;width:1200px;height:120px;font-size:100px;margin-bottom:0px"> <span class="style4" style="background-color:#989898;widht:1100px;height:30px;margin-top:0px"><span class="style4" style="background-color:#989898;widht:1100px;height:30px;margin-top:0px"><span class="style4" style="background-color:#989898;widht:1100px;height:30px;margin-top:0px"><span class="style4" style="background-color:#989898;widht:1100px;height:30px;margin-top:0px"><span class="style4" style="background-color:#989898;widht:1100px;height:30px;margin-top:0px"><span class="style4" style="background-color:#989898;widht:1100px;height:30px;margin-top:0px"><span class="style4" style="background-color:#989898;widht:1100px;height:30px;margin-top:0px"><span class="style4" style="background-color:#989898;widht:1100px;height:30px;margin-top:0px"><span class="style4" style="background-color:#989898;widht:1100px;height:30px;margin-top:0px"><span class="style4" style="background-color:#989898;widht:1100px;height:30px;margin-top:0px"><span class="style4" style="background-color:#989898;widht:1100px;height:30px;margin-top:0px"><span class="style4" style="background-color:#989898;widht:1100px;height:30px;margin-top:0px"><span class="style4" style="background-color:#989898;widht:1100px;height:30px;margin-top:0px"><span class="style4" style="background-color:#989898;widht:1100px;height:30px;margin-top:0px"><span class="style4" style="background-color:#989898;widht:1100px;height:30px;margin-top:0px"><span class="style4" style="background-color:#989898;widht:1100px;height:30px;margin-top:0px"><span class="style4" style="background-color:#989898;widht:1100px;height:30px;margin-top:0px"><span class="style4" style="background-color:#989898;widht:1100px;height:30px;margin-top:0px"><span class="style4" style="background-color:#989898;widht:1100px;height:30px;margin-top:0px"><span class="style4" style="background-color:#989898;widht:1100px;height:30px;margin-top:0px"><span class="style4" style="background-color:#989898;widht:1100px;height:30px;margin-top:0px"> </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><a href="https://www.youtube.com/" target="_blank"><img border="0" src="youtube.png" style="float:right" class="shakeimage" onMouseover="init(this);rattleimage()" onMouseout="stoprattle(this);top.focus()" onClick="top.focus()"/></a></span></span></span></span></h2>
+ 
+
+</style>
+
+<h3 style="font-family:'Monotype Sorts',dingbats,'ITC Zapf Dingbats',fantasy;font-size:30px;"><u><br/>About Us</u></h3><br/><br/>
+
+<p align="justify"><b>Everyday we need to make decisions related to the different aspects of our life. Making right education related decision can go a long way in shaping ones career. This is a very time consuming and difficult process because education related information is unorganized, ever changing and not customized to suit your strengths. Colleges, Institutes and Universities are striving to adapt to market requirements by introducing new courses. However due to the lack of availability of a common forum such crucial information is not reached to education seekers.There are many career options and courses available to students from different institutes around the world. But the biggest challenge is to find the right career path and the right institutes to pursue that. We wish to address this issue for the ever increasing education seeker population who wish to gain knowledge and decide on their career paths through our site. The site aims to bridge the gap between the education seeker and the institutions with easy accessibility to the courses and the institutes offered to them at their respective ranks.
+It also provides students/people with the career options which suits their profile. Students will get up to date information on various recruitments available, admission dates, entrance exam dates and results for various programs, scholarships, news and events related to education.
+It helps students,teachers and parents to search for Study in India, higher education in India, Courses in India, Courses after 12th, 10+2, Courses after graduation for arts, commerce, science, engineering students, top MBA, PGDM Colleges, Courses Institutes & best Universities in India, institutes, universities, top Careers, career options in India, Degrees and Diplomas, Coaching and Test Preparation Institutes and centres, Study options in India for MBA, MCA, MBBS, Law, Engineering, Computers, Animation , Arts, Commerce, Aviation, Hotel Management, Finance, Retail, Fashion Desiginig, Architecture, Medical, Media , Merchant Navy, Hair and Beauty courses and many more. Find Coaching Institutes, centres and colleges accepting CAT, MAT, IAS, GMAT, CET, IELTS, TOEFL, GRE, SAT, CLAT, IITJEE, GATE, XAT score, MBA coaching institutes and centres, centers, classes in Delhi, Mumbai, Chennai, Hyderabad, Kolkata, Chandigarh, Pune, Bangalore, Jaipur, Noida, Gurgaon, Ahmedabad, Indore, kota etc.</b>
+</p>
